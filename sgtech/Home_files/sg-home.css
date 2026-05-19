@@ -1,0 +1,1165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+
+/* -------------------------------------------------------------------------------------- header starts here ------------------------------------------------------------------------------ */
+.navbar-brand img {
+    height: 70px;
+}
+
+a.navbar-brand {
+    color: #445765 !important;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+a.nav-link {
+    color: #030405 !important;
+    margin: 0 25px;
+    position: relative;
+}
+
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 45px;
+    left: 0;
+    background: linear-gradient(to right, rgba(248, 198, 87, 1), rgba(250, 212, 135, 1), rgba(165, 110, 15, 1));
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.register-btn {
+    background-color: rgba(80, 15, 62, 1);
+    color: #fff!important;
+    padding: 10px 10px;
+    font-size: 20px;
+}
+
+.register-btn:hover {
+    background: linear-gradient(to right, rgba(248, 198, 87, 1), rgba(250, 212, 135, 1), rgba(165, 110, 15, 1));
+    color: white;
+}
+
+.navbar-nav {
+    margin: auto;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-item a {
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-item a:hover {
+    color: #f0ad4e;
+}
+
+.close-menu-btn-wrapper {
+    list-style-type: none;
+}
+
+.close-menu-btn i {
+    font-size: 24px;
+    color: black;
+}
+
+.close-menu-btn i:hover {
+    color: #f0ad4e;
+}
+/*-------------------------------------------------------------------------------------- header ends here ---------------------------------------------------------------------------------- */
+
+
+
+/*--------------------------------------------------------------------------------------- banner starts here ------------------------------------------------------------------------------- */
+.card {
+    background: linear-gradient(to right, rgba(248, 198, 87, 1), rgba(250, 212, 135, 1));
+    border: none;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-body h2 {
+    font-weight: 800;
+    font-size: 50px;
+    margin-bottom: 1rem;
+}
+
+p#card-text {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.register-btn {
+    background-color: rgba(80, 15, 62, 1);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.banner-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.25rem;
+}
+
+/*--------------------------------------------------------------------------------------- banner ends here ------------------------------------------------------------------------------- */
+
+
+
+/*--------------------------------------------------------------------------------------- client starts here ------------------------------------------------------------------------------- */
+.client-section {
+    margin: 10px 10px;
+}
+
+.carousel-item img {
+    max-height: 150px;
+    max-width: 90%;
+    object-fit: contain;
+}
+
+.carousel-inner .carousel-item {
+    transition: transform 10s ease;
+    margin-top: 50px !important;
+}
+
+.text-primary {
+    font-weight: 700;
+    font-size: 2.25rem;
+}
+
+.my-5 p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgba(113, 113, 113, 1);
+}
+
+
+/*--------------------------------------------------------------------------------------- Nandhini change client logo here ------------------------------------------------------------------------------- */
+.carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: black; /* Change the arrow icon background to black */
+        
+    }
+  
+
+    /* Positioning the carousel arrows at the start and end of the screen */
+    .carousel-control-prev,
+    .carousel-control-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 5;
+    }
+
+    .carousel-control-prev {
+        left: 0;
+    }
+
+    .carousel-control-next {
+        right: 0;
+    }
+
+/*--------------------------------------------------------------------------------------- client ends here ------------------------------------------------------------------------------- */
+
+
+
+/*-------------------------------------------------------------------------------------- about-us starts here ------------------------------------------------------------------------------ */
+.card-custom {
+    background-color: rgba(86, 188, 231, 1) !important;
+    color: black;
+    border: none;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.card-title {
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.card-body-custom {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+p.card-text {
+    font-size: 25px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.about-section {
+    padding: 30px 20px;
+    margin: 10px 30px;
+}
+
+.about-title {
+    color: rgba(0, 117, 255, 1);
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+p.about-text {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/*-------------------------------------------------------------------------------------- about-us ends here ------------------------------------------------------------------------------- */
+
+
+
+/*------------------------------------------------------------------------------------ learn-more starts here ------------------------------------------------------------------------------- */
+.custom-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.custom-content p {
+    max-width: 600px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.learn-more-btn {
+    background-color: #4c1130;
+    color: white;
+}
+
+/*--------------------------------------------------------------------------------------- learn-more ends here ------------------------------------------------------------------------------- */
+
+
+
+/*--------------------------------------------------------------------------------------- milestone starts here ------------------------------------------------------------------------------- */
+.milestones-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.milestones-section h2 {
+    color: rgba(0, 117, 255, 1);
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.milestones-section p {
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.milestone-box {
+    background-color: #e53935;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/*--------------------------------------------------------------------------------------- milestone ends here ------------------------------------------------------------------------------- */
+/*--------------------------------------------------------------------------------------- Testimonials start here ------------------------------------------------------------------------------- */
+
+.client-circle {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.client-circle img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Make the image a circle */
+    object-fit: cover; /* Ensure the image is fully covered within the circle */
+    margin-bottom: 10px; /* Add space between image and text */
+}
+
+.client-circle p {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    text-align: initial;
+}
+
+/*--------------------------------------------------------------------------------------- Testimonials end here ------------------------------------------------------------------------------- */
+
+/*--------------------------------------------------------------------------------------- courses starts here ------------------------------------------------------------------------------- */
+.courses-section {
+    text-align: center;
+    padding: 10px 20px;
+    margin: 10px 30px;
+}
+
+.courses-section h2 {
+    color: rgba(0, 117, 255, 1);
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.courses-section h4 {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.courses-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.courses-content p {
+    text-align: left;
+    font-size: 20px;
+}
+
+.learn-more-btn {
+    background-color: #4c1130;
+    color: white;
+    float: left;
+}
+
+/*--------------------------------------------------------------------------------------- courses ends here ------------------------------------------------------------------------------- */
+
+
+/*------------------------------------------------------------------------------------- services starts here ------------------------------------------------------------------------------- */
+.services-section {
+    padding: 10px 60px;
+    margin: 30px 20px;
+}
+
+.service-list {
+    margin-top: 20px;
+}
+
+.service-list li {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.col h2 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.services {
+    margin-top: 50px;
+}
+
+.service-item {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.service-item img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.service-title {
+    margin-top: 10px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+/*--------------------------------------------------------------------------------------- services ends here ------------------------------------------------------------------------------- */
+
+
+/*------------------------------------------------------------------------------------- benefits starts here ------------------------------------------------------------------------------ */
+.benefits-section {
+    background-color: rgba(133, 39, 39, 1);
+    color: white;
+    padding: 40px 40px;
+    margin: 20px 40px;
+    border-radius: 25px;
+}
+
+.mb-4 h3 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.benefit-item {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.benefit-item img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.benefit-title {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/*--------------------------------------------------------------------------------------- benefits ends here ------------------------------------------------------------------------------- */
+
+
+
+/*--------------------------------------------------------------------------------------- steps starts here ------------------------------------------------------------------------------- */
+.banner {
+    background: url('Images/banner-2.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    height: 70vh;
+    margin: 60px 40px 20px 40px;
+}
+
+.banner h1 {
+    padding: 10px 10px;
+}
+
+.steps {
+    background: linear-gradient(to right, rgba(248, 198, 87, 1), rgba(250, 212, 135, 1), rgba(165, 110, 15, 1));
+    color: black;
+    padding: 20px 0;
+    margin: 0px auto;
+    border-radius: 25px;
+}
+
+.steps-section {
+    margin-top: -5%;
+}
+
+.step-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.step-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.step-icon img {
+    display: block;
+    margin: 0 auto;
+}
+
+/*--------------------------------------------------------------------------------------- steps ends here ------------------------------------------------------------------------------- */
+
+
+
+/*---------------------------------------------------------------------------------- contact-form starts here ------------------------------------------------------------------------------- */
+.contact-form {
+    background: linear-gradient(to right, #c79d43, #e1bb76);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.contact-form h2 {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-form .form-control {
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.contact-form .btn {
+    background-color: #f96332;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.contact-form .btn:hover {
+    background-color: rgba(244, 91, 57, 1);
+}
+
+.contact-form .form-group.row>div {
+    padding-right: 2px;
+    padding-left: 2px;
+
+}
+
+.contact-title {
+    color: rgba(0, 117, 255, 1);
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.contact-section {
+    padding: 20px;
+    text-align: left;
+    margin-top: 60px;
+}
+
+.contact-section h2 {
+    color: black;
+    font-weight: bold;
+}
+
+.contact-section p {
+    margin-bottom: 10px;
+}
+
+.contact-section .btn {
+    background-color: rgba(80, 15, 62, 1);
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.contact-section .btn:hover {
+    background-color: rgba(80, 15, 62, 1);
+}
+
+/*------------------------------------------------------------------------------------ contact-form ends here ------------------------------------------------------------------------------- */
+
+
+
+
+/*-------------------------------------------------------------------------------------- footer starts here -------------------------------------------------------------------------------- */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer h5 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.footer h4 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.footer .quick-links a,
+.footer .our-features a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.footer .quick-links a:hover,
+.footer .our-features a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    color: #fff;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons:hover {
+    color: #fff;
+}
+
+.footer .newsletter input[type="email"] {
+    width: 70%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.footer .newsletter button {
+    background-color: #ff00ff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 15px auto;
+}
+
+.footer .copyright {
+    border-top: 1px solid #444;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #fff;
+    color: #000;
+}
+
+.list-unstyled li {
+    margin: 15px auto;
+    font-size: 20px;
+}
+
+/* ---------------------------------------------------------------------------------- footer ends here ------------------------------------------------------------------------------------- */
+
+
+
+/*----------------------------------------------------------------------------------------- media queries ------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 1025px) {
+    .close-menu-btn-wrapper {
+        display: none;
+    }
+    .footer .row{
+        column-gap: 100px;   /*updated */
+   }
+}
+
+@media (max-width: 1024px) {
+    p#card-text {
+        font-size: 25px;
+    }
+
+    .card-body h2 {
+        font-size: 35px;
+    }
+
+    p.about-text {
+        font-size: 20px;
+    }
+
+    p.card-text {
+        font-size: 20px;
+    }
+
+    .navbar-brand img {
+        height: 50px;
+    }
+
+    a.nav-link {
+        font-size: 18px;
+        margin: 0 15px;
+    }
+
+    .register-btn {
+        font-size: 15px;
+    }
+    .footer .row{
+        column-gap: 110px; /*updated */
+    }
+}
+
+
+@media (max-width: 992px) {
+    .card-title {
+        font-size: 22px;
+    }
+
+    .card-text p {
+        font-size: 18px;
+    }
+
+    .about-title {
+        font-size: 32px;
+    }
+
+    .about-text p {
+        font-size: 25px;
+    }
+
+    .banner {
+        margin: 20px;
+        height: 60vh;
+        padding: 30px 0;
+    }
+
+    .steps-section {
+        margin-top: -2%;
+    }
+
+    .step-icon img {
+        width: 50px;
+    }
+
+    .navbar-brand img {
+        max-width: 150px;
+    }
+
+    .register-button {
+        padding: 8px 16px;
+        border-width: 3px;
+    }
+
+    .nav-item {
+        margin-bottom: 8px;
+    }
+
+    .close-menu-btn-wrapper {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1100;
+    }
+
+    .footer .row{
+        column-gap: 85px;   /*updated */
+   }
+
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    p#card-text {
+        font-size: 20px;
+    }
+
+    .card-body h2 {
+        font-size: 30px;
+    }
+
+    .register-btn {
+        font-size: 18px;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
+
+    .card-text p {
+        font-size: 16px;
+    }
+
+    .about-title {
+        font-size: 32px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+    .about-section {
+        margin: 10px 10px;
+    }
+
+    .custom-container {
+        flex-direction: column !important;
+    }
+
+    .custom-content p {
+        font-size: 20px;
+    }
+
+    .milestone-box {
+        margin: 0 10px;
+    }
+
+    .milestones-section p {
+        font-size: 20px;
+    }
+
+    .courses-content {
+        flex-direction: column;
+    }
+
+    .courses-content img {
+        margin-top: 20px;
+        width: 100%;
+        height: 150%;
+    }
+
+    .learn-more-btn {
+        float: none;
+    }
+
+    .courses-section {
+        padding: 10px 10px;
+    }
+
+    .service-item img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .banner {
+        margin: 15px;
+        height: 50vh;
+        padding: 20px 0;
+    }
+
+    .step-icon img {
+        width: 45px;
+    }
+
+    .banner h1 {
+        font-size: 25px;
+    }
+
+    .steps-section {
+        margin-top: -15%;
+    }
+
+    .footer h4 {
+        font-size: 20px;
+    }
+
+    .footer .quick-links a,
+    .footer .our-features a,
+    .list-unstyled li {
+        font-size: 18px;
+    }
+
+    .footer .row{
+         column-gap: 85px;   /*updated */
+    }
+
+    .navbar {
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        border-color: white;
+        margin-left: auto;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        bottom: 0;
+        width: 40%;
+        height: 60%;
+        background-color: #fff;
+        transition: right 0.3s ease;
+        z-index: 1000;
+    }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 40%;
+        height: 2px;
+        bottom: 0px;
+        left: 80px;
+        background: linear-gradient(to right, rgba(248, 198, 87, 1), rgba(250, 212, 135, 1), rgba(165, 110, 15, 1));
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    .navbar-collapse.show {
+        right: 0;
+    }
+
+    .navbar-toggler.collapsed~.navbar-collapse::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 900;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none;
+    }
+
+    .navbar-toggler.collapsed~.navbar-collapse.show::before {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .navbar-nav {
+        margin-top: 15px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    #register-btn {
+        margin: 10px auto;
+        display: block;
+        width: 70%;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .banner-img img {
+        height: 100% !important;
+    }
+
+    .custom-content {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-title {
+        font-size: 22px;
+    }
+
+    .card-text p {
+        font-size: 14px;
+    }
+
+    .about-title {
+        font-size: 32px;
+    }
+
+    .about-text {
+        margin: 10px 10px;
+    }
+
+    .about-section {
+        margin: 10px 10px;
+    }
+
+    .banner {
+        margin: 10px;
+        height: 40vh;
+        padding: 15px 0;
+    }
+
+    .step-icon img {
+        width: 40px;
+    }
+
+    .steps-section {
+        margin-top: 5%;
+    }
+
+    .banner h1 {
+        font-size: 25px;
+    }
+
+    .footer h4 {
+        margin: 15px auto;
+    }
+
+    .footer .quick-links a,
+    .footer .our-features a {
+        margin: 15px;
+    }
+}
+
+@media (max-width: 425px) {
+    .about-section {
+        margin: 10px 10px;
+        padding: 50px 10px;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
+
+    .card-text {
+        font-size: 20px;
+    }
+
+    .about-title {
+        font-size: 32px;
+    }
+
+    .milestones-section p {
+        font-size: 20px;
+    }
+
+    .courses-section {
+        margin: 10px 10px;
+        padding: 10px 10px;
+    }
+
+    .services-section {
+        padding: 10px 10px;
+        margin: 30px 10px;
+    }
+
+    .benefits-section {
+        margin: 20px 10px;
+    }
+
+    .banner {
+        margin: 5px;
+        height: 30vh;
+        padding: 10px 0;
+    }
+
+    .step-icon img {
+        width: 35px;
+    }
+
+    .banner h1 {
+        margin-top: 65px;
+        font-size: 20px;
+    }
+
+    .contact-form-section {
+        margin: 10px 10px;
+    }
+
+    .form-group.row>div {
+        padding: 10px;
+    }
+
+    #register-btn {
+        margin: 10px auto;
+        display: block;
+        width: 75%;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 50%;
+        height: 60%;
+        background-color: #fff;
+        transition: right 0.3s ease;
+        z-index: 1000;
+    }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 60%;
+        height: 2px;
+        left: 35px;
+        background: linear-gradient(to right, rgba(248, 198, 87, 1), rgba(250, 212, 135, 1), rgba(165, 110, 15, 1));
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    .nav-link:hover::after,
+    .nav-link:focus::after {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+}
+
+@media (max-width: 375px) {
+    #register-btn {
+        margin: 10px auto;
+        display: block;
+        width: 75%;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 55%;
+        height: 62%;
+        background-color: #fff;
+        transition: right 0.3s ease;
+        z-index: 1000;
+    }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 60%;
+        height: 2px;
+        left: 35px;
+        background: linear-gradient(to right, rgba(248, 198, 87, 1), rgba(250, 212, 135, 1), rgba(165, 110, 15, 1));
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    .nav-link:hover::after,
+    .nav-link:focus::after {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+}
+
+@media (max-width: 320px) {
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 75%;
+        height: 2px;
+        left: 20px;
+        background: linear-gradient(to right, rgba(248, 198, 87, 1), rgba(250, 212, 135, 1), rgba(165, 110, 15, 1));
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    .nav-link:hover::after,
+    .nav-link:focus::after {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+
+    #register-btn {
+        margin: 10px auto;
+        display: block;
+        width: 85%;
+    }
+}
+
+/* Updated for header titles */
+.nav-link.active::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
